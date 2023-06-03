@@ -1,8 +1,8 @@
-import { BoxBufferGeometry, SphereGeometry, Mesh, MeshBasicMaterial } from 'three';
+import { BoxBufferGeometry, Mesh, MeshBasicMaterial } from 'three';
 
-function createCube() {
+function createCube_2() {
   // Create a geometry
-  const geometry = new SphereGeometry( 1 );
+  const geometry = new BoxBufferGeometry( 2, 2, 2 );
 
   // create a default (white) Basic material
   const material = new MeshBasicMaterial();
@@ -10,9 +10,10 @@ function createCube() {
   // create a Mesh containing the geometry and material
   const mesh = new Mesh( geometry, material );
 
-  mesh.position.set( 2, 0, 0 );
+  mesh.position.set( -1, 0, 0 );
+
 
   return mesh;
 }
 
-export { createCube };
+export { createCube_2 };

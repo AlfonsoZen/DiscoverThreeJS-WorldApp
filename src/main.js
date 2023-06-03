@@ -14,4 +14,10 @@ function main() {
 }
 
 // Call main to start the app
-main();
+const button = document.querySelector('#run');
+button.addEventListener( 'click', () => {
+  main();
+  button.remove();
+})
+
+// main();

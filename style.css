@@ -32,4 +32,14 @@ h1 {
     background to prevent flashing on load
   */
   background-color: skyblue;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#run {
+  font-size: large;
+  padding: 10px;
+  cursor: pointer;
 }
